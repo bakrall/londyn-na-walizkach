@@ -1,0 +1,237 @@
+﻿/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*tutaj zaczyna sie moje*/
+
+body {
+ background: #DCDCDC;
+ font-size: 15px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+background-color: #191919;
+}
+.navbar a {
+color: #DCDCDC;
+}
+.navbar a:hover {
+color: black;
+}
+a#zero:hover {
+color:#DCDCDC;
+}
+.dropdown-menu {
+background-color: #DCDCDC;
+}
+.dropdown-menu li a {
+font-size: 15px;
+}
+.navbar-toggle {
+background-color: #DCDCDC;
+}
+.icon-bar {
+background-color: black;
+}
+.mainpic {
+height: 500px;
+background: #808080 url(../img/KrajobrazTamiza11.jpg) no-repeat;
+background-size: cover;
+position: relative;
+margin-bottom: 10px;
+}
+.mainpic h1, h2 {
+color:SteelBlue;
+text-shadow: 1px 2px black;
+font: 6em Georgia, serif;
+}
+.mainpic h1 {
+margin:20px 20px;
+}
+.mainpic h2 {
+font-size: 3em;
+margin-right: 5px;
+}
+@media (max-width: 350px) {
+.mainpic h1 {
+font-size: 3.7em;}
+.mainpic h2 {
+font-size: 2em;}
+}
+@media (min-width: 351px) and (max-width: 400px) {
+.mainpic h1 {
+font-size: 4em;}
+.mainpic h2 {
+font-size: 2em;}
+}
+@media (min-width:401px) and (max-width: 600px) {
+.mainpic h1 {
+font-size: 5em;}
+.mainpic h2 {
+font-size: 2.5em;}
+}
+.text {
+margin: 10px 10px 30px 20px;
+font-size: 1.1em;
+padding: 25px;
+}
+.text h3 {
+font-size: 2em;
+font-weight: bold;
+padding:5px 0px;
+margin-bottom: 30px;
+}
+.text p {
+line-height: 125%;
+text-indent: 1em;
+text-align: justify;
+}
+
+.footer {
+background-color:#191919;
+color:#DCDCDC;
+}
+.footer a {
+text-decoration: none;
+line-height: 120%;
+font-size: 1.1em;
+}
+.footer a:hover {
+color:white;
+}
+.footer h4 {
+font-weight: bold;
+padding: 10px 0px 5px;
+font-size: 1.2em;
+}
+.footer p {
+padding:20px 0px;
+}
+
+ol{
+list-style-type: decimal;
+padding: 10px 30px;
+}
+
+.galeria {
+margin: 0px 0px 80px 0px;
+}
+@media (max-width: 390px) {
+	.galeria {
+	    margin: 0 auto 80px auto;
+	    width:100%;}
+}
+@media (min-width: 391px) and (max-width: 970px) {
+	.galeria {
+	    margin: 0 auto 80px auto;
+	    width:50%;}
+}
+a#sadburyhill, a#streatham, a#leyton, a#tamiza, a#rozne {
+	        text-decoration: none;
+                text-align: center;
+                line-height: 200px;
+	        width: 270px;
+	        height: 200px;
+	        display: block;
+                background-size: cover;
+                margin: 5px;
+                border:2px solid #f5f5f5;
+                color:white;
+                font-weight:bold;
+                font-size: 1.2em;}
+@media (max-width: 390px) {
+	a#sadburyhill, a#streatham, a#leyton, a#tamiza, a#rozne {
+		width: 250px;
+	    height: 200px;
+	}
+}
+@media (min-width: 960px) and (max-width: 1165px) {
+	a#sadburyhill, a#streatham, a#leyton, a#tamiza, a#rozne {
+		width: 230px;
+	    height: 200px;
+	}
+}
+aside span {
+vertical-align: bottom;
+}
+a#sadburyhill{
+background-image: url(../img//sadburyhill.jpg);
+}
+a#streatham {
+  background-image: url(../img//streatham.jpg);
+}
+a#leyton {
+  background-image: url(../img//leytoncoronationgardens.jpg);
+}
+a#tamiza {
+  background-image: url(../img//towerbridge.jpg);
+}
+a#rozne {
+  background-image: url(../../JPEG//globetheatre.jpg);
+}
+.galeria li {
+height: 110px;
+}
+
+.galeria li a {
+position: relative;
+bottom:0px;
+left:0;
+}
+.galeria li:nth-of-type(2n) a {
+left: -50px;
+}
+address {
+	font-style: italic;
+}
+.dwa p {
+	text-indent: 0px;
+}
+strong {
+	font-weight: bold;
+}
