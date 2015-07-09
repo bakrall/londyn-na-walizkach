@@ -81,7 +81,7 @@ background-color: black;
 }
 .mainpic {
 height: 500px;
-background: #808080 url(../img/KrajobrazTamiza11.jpg) no-repeat;
+background: #808080 url(../img/krajobraztamiza.jpg) no-repeat;
 background-size: cover;
 position: relative;
 margin-bottom: 10px;
@@ -201,19 +201,19 @@ aside span {
 vertical-align: bottom;
 }
 a#sadburyhill{
-background-image: url(../img//sadburyhill.jpg);
+background-image: url(../img/sadburyhill.jpg);
 }
 a#streatham {
-  background-image: url(../img//streatham.jpg);
+  background-image: url(../img/streatham.jpg);
 }
 a#leyton {
-  background-image: url(../img//leytoncoronationgardens.jpg);
+  background-image: url(../img/leytongardens.jpg);
 }
 a#tamiza {
-  background-image: url(../img//towerbridge.jpg);
+  background-image: url(../img/towerbridge.jpg);
 }
 a#rozne {
-  background-image: url(../JPEG//globetheatre.jpg);
+  background-image: url(../img/globetheatre.jpg);
 }
 .galeria li {
 height: 110px;
