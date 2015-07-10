@@ -1,4 +1,4 @@
-﻿/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
    reset
@@ -87,7 +87,7 @@ position: relative;
 margin-bottom: 10px;
 }
 .mainpic h1, h2 {
-color:SteelBlue;
+color:#4682B4;
 text-shadow: 1px 2px black;
 font: 6em Georgia, serif;
 }
@@ -128,7 +128,7 @@ font-size: 1.1em;
 .text h3 {
 font-size: 2em;
 font-weight: bold;
-padding:5px 0px;
+padding: 5px 0px;
 margin-bottom: 30px;
 }
 h3#ciek {
@@ -189,21 +189,21 @@ margin: 0px 0px 80px 0px;
 	    width:50%;}
 }
 a#sadburyhill, a#streatham, a#leyton, a#tamiza, a#rozne {
-	        text-decoration: none;
-                text-align: right;
-                line-height: 20px;
-	        width: 270px;
-	        height: 200px;
-	        display: block;
-                background-size: cover;
-                margin: 5px;
-                border:2px solid #f5f5f5;
-                color:#fff;
-                font-weight:bold;
-                font-size: 1.2em;
-             padding: 5px;
-             text-shadow: 1px 1px #000;
-            }
+	text-decoration: none;
+    text-align: right;
+    line-height: 20px;
+	width: 270px;
+	height: 200px;
+	display: block;
+    background-size: cover;
+    margin: 5px;
+    border:2px solid #f5f5f5;
+    color:#fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 5px;
+    text-shadow: 1px 1px #000;
+}
 @media (max-width: 390px) {
 	a#sadburyhill, a#streatham, a#leyton, a#tamiza, a#rozne {
 		width: 250px;
@@ -254,4 +254,8 @@ address {
 }
 strong {
 	font-weight: bold;
+}
+time {
+	font-style: italic;
+	font-size: 0.9em;
 }
