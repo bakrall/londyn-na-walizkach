@@ -77,7 +77,7 @@ font-size: 15px;
 background-color: #DCDCDC;
 }
 .icon-bar {
-background-color: black;
+background-color: #000;
 }
 .mainpic {
 height: 500px;
@@ -131,6 +131,11 @@ font-weight: bold;
 padding: 5px 0px;
 margin-bottom: 30px;
 }
+@media (max-width: 350px) {
+	.text h3 {
+		font-size: 1.5em;
+	}
+}
 .text2 {
 	margin-left: 20px;
 	margin-bottom: 30px;
@@ -166,6 +171,18 @@ figcaption#lodz {
 	font-size: 0.9em;
 	font-style: italic;
 	padding-left: 10px;
+}
+#fix {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+@media (min-width: 1600px) {
+	#fixlg {
+	  position: absolute;
+	  bottom: 0;
+	  width: 100%;
+	}
 }
 .footer {
   background-color: #191919;
