@@ -62,7 +62,7 @@ background-color: #191919;
 color: #DCDCDC;
 }
 .navbar a:hover {
-color: black;
+color: #000;
 }
 a#zero:hover {
 color:#DCDCDC;
@@ -70,9 +70,15 @@ color:#DCDCDC;
 .dropdown-menu {
 background-color: #DCDCDC;
 }
+@media (max-width: 765px) {
+	.dropdown-menu li a{
+		color: #DCDCDC;
+	}
+}
 .dropdown-menu li a {
 font-size: 15px;
 }
+
 .navbar-toggle {
 background-color: #DCDCDC;
 }
