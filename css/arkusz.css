@@ -289,8 +289,14 @@ left: -50px;
 address {
 	font-style: italic;
 }
-.dwa p {
-	text-indent: 0px;
+@media (max-width: 350px) {
+	address p {
+		font-size: 0.9em;
+		text-indent: 0em;
+	}
+}
+p.dwa {
+	text-indent: 0em;
 }
 strong {
 	font-weight: bold;
