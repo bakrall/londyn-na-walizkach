@@ -10,9 +10,9 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/arkusz.css" rel="stylesheet">
-    <link href="../css/lightbox.css" rel="stylesheet">
-    <script src="../js/lightbox-plus-jquery.min.js"></script>
-    <script src="../js/lightbox.min.js"></script>
+    <link href="css/lightbox.css" rel="stylesheet">
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -73,11 +73,11 @@
  </div>
 </div>
 
- <div class="row">
-  <div class="container-fluid">
+ <div class="container-fluid">
+  <div class="row">
    <div class="col-md-7 col-md-offset-1 text-justify"> 
-    <div class="well">
-    <h3>Ciekawostki</h3>
+    <div class="text well">
+    <h3 id="ciek">Ciekawostki</h3>
     </div>
     <div class="panel-group">
      <div class="panel panel-success">
@@ -89,8 +89,7 @@
       </div>
       <div id="herbata" class="panel-collapse collapse">
        <div class="panel-body">
-  <p>Picie herbaty z mlekiem. W pubuch czasem pytają, czy chce się mleko.
- Jeśli nie pytają, to na pewno je się dostanie.</p>
+        <p>W Londynie tradycyjnie, jeżeli piję się herbatę, to z mlekiem. W lokalach czasem pytają, czy chce się mleko. Ale jeśli nie spytają, to na pewno je się dostanie.</p>
        </div>
       </div>
      </div>
@@ -104,11 +103,10 @@
       </div>
       <div id="uprzejmosc" class="panel-collapse collapse">
        <div class="panel-body">
-        <p>Mówienie "Dziękuję" do kierowcy autobusu, kiedy zatrzymuje się na przystanku. 
-        Nie wszyscy tak robią, ale są tacy, co przed wyjściem z autobusu dziękują kierowcy,
+        <p>Często ludzie przed wyjściem z autobusu dziękują kierowcy,
         że się zatrzymał na ich przystanku.</p><br />
-        <p>Luz kierowców autobusów - jeżeli autobus już odjeżdża od stacji,
-        ale ktoż spóźniony podbiegnie i poprosi gestykalacją o zatrzymanie się,
+        <p>Kierowcy zaś są raczej wyluzowani - jeżeli autobus już odjeżdża od stacji,
+        ale ktoś spóźniony podbiegnie i poprosi gestykalacją o zatrzymanie się,
         kierowca faktycznie się zatrzyma.</p>
        </div>
       </div>
@@ -123,11 +121,7 @@
       </div>
       <div id="lunch" class="panel-collapse collapse">
        <div class="panel-body">
-        <p>Swoboda przejawia się w jednym angielskim zwyczaju, a mianowicie masowym spożywaniu lunchu/śniadania/czegokolwiek
- lub po prostu odpoczywaniu, siedząc bezpośrednio na trawie miejskich parków. 
-Można zobaczyć grupki elegancko ubranych mężczyzn w różnym wieku, siedzących od tak na trawie w grupkach lub solo.
- Formalność ich ubrań, kontrastuje mocno z nieformalnym, luzackim siedzenie na ziemi. I jest bardzo 
-charakterystyczne dla Londynu.</p>
+        <p>Swoboda przejawia się w jednym angielskim zwyczaju, a mianowicie masowym spożywaniu lunchu/śniadania/czegokolwiek lub po prostu odpoczywaniu, siedząc bezpośrednio na trawie miejskich parków. Można zobaczyć grupki elegancko ubranych mężczyzn w różnym wieku, siedzących od tak na trawie w grupkach lub solo. Formalność ich ubrań, kontrastuje mocno z nieformalnym, luzackim siedzenie na ziemi. I jest bardzo charakterystyczne dla Londynu.</p>
        </div>
      </div>
     </div>
@@ -140,8 +134,7 @@ charakterystyczne dla Londynu.</p>
      </div>
      <div id="kranowka" class="panel-collapse collapse">
       <div class="panel-body">
-       <p>Picie wody z kranu. W restauracji klienci proszą o wodę 
-       z kranu.</p>
+       <p>Picie wody z kranu jest czymś powszechnym. Dlatego nawet w restauracjach klienci nie proszą o wodę mineralną, ale o wodę z kranu (tap water), która jest za darmo.</p>
       </div>
      </div>
     </div>
@@ -149,7 +142,7 @@ charakterystyczne dla Londynu.</p>
     <div class="panel panel-success">
      <div class="panel-heading">
       <h4 class="panel-title">
-       <a data-toggle="collapse" data-parent=".panel-group" href="#krany">Myć zimną czy ciepłą?</a>
+       <a data-toggle="collapse" data-parent=".panel-group" href="#krany">Myć zimną czy ciepłą wodą?</a>
       </h4>
      </div>
      <div id="krany" class="panel-collapse collapse">
@@ -176,27 +169,60 @@ charakterystyczne dla Londynu.</p>
      </div>
      <div id="czerwone" class="panel-collapse collapse">
       <div class="panel-body">
-       <p>Przechodzenie na czerwonym świetle jest nagminne i powszechnie
-       tolerowane.
-       Również przez policję.</p>
+       <p>Przechodzenie na czerwonym świetle jest czym nagminnym i powszechnie
+       tolerowanym. Również przez policję. Tam piesi nie tyle patrzą na światła, co na to, czy jedzie jakiś samochód czy nie. Chociaż na takich ulicach jak Oxford Street, w niektórych miejscach, ludzie często i na to nie patrzą, bywa że przelewający się tłum (tak to już jest na tej ulicy) wymusza pierwszeństwo na samochodach.
+       </p>
+      </div>
+     </div>
+    </div>
+
+
+    <div class="panel panel-warning">
+     <div class="panel-heading">
+      <h4 class="panel-title">
+       <a data-toggle="collapse" data-parent=".panel-group" href="#patrole">Patrole policji konno lub w łodzi</a>
+      </h4>
+     </div>
+     <div id="patrole" class="panel-collapse collapse">
+      <div class="panel-body">
+       <p>Bardzo charakterystycznym widokiem są policjanci, patrolujący ulice na koniach. Policja też pojawia się na rzece w policyjnych łódeczkach.
+       </p>
+       <figure>
+       <img id="lodz" src="img/lodeczka_policji.jpg" alt="łódeczka policji">
+       <figcaption id="lodz">łódeczka policji</figcaption>
+       </figure>
+      </div>
+     </div>
+    </div>
+   
+
+   <div class="panel panel-danger">
+     <div class="panel-heading">
+      <h4 class="panel-title">
+       <a data-toggle="collapse" data-parent=".panel-group" href="#napiwki">Napiwki</a>
+      </h4>
+     </div>
+     <div id="napiwki" class="panel-collapse collapse">
+      <div class="panel-body">
+       <p>Powszechnym zwyczajem w lokalach jest doliczanie 10% napiwku od razu do rachunku. Niestety, ta kwota nie trafia do kelnerów, ale zaledwie jej niewielki procent. Czyli de facto, nie jest to nasze podziękowanie za obsługę, ale po prostu podwyższona cena tego, co zjedliśmy. Klienci, którzy są tego świadomi, po otrzymaniu rachunki, proszą o odliczenie z niego napiwku i zostawiają napiwek w kwocie wedle własnego uznania bezpośrednio kelnerowi. Można coś takiego spokojnie zrobić.
+       </p>
       </div>
      </div>
     </div>
    </div>
   </div>
- 
 
 
-   <div class="col-md-3 col-xs-3 col-xs-offset-2 col-md-offset-1">
+   <div class="col-md-3 col-md-offset-1">
     <div class="galeria">
    <ul>
     <li>
-     <a id="tamiza" href="../../JPEG/Tower Bridge.jpg" data-lightbox="tamiza" data-title="Tower Bridge">Tamiza</a></li>
-     <a href="../JPEG/Tamiza_2.jpg" data-lightbox="tamiza" data-title="Tamiza"></a>
+     <a id="tamiza" href="img/towerbridge.jpg" data-lightbox="tamiza" data-title="Tower Bridge">Tamiza</a></li>
+     <a href="img/tamiza_2.jpg" data-lightbox="tamiza" data-title="Tamiza"></a>
      <a href="img/tamiza_3.jpg" data-lightbox="tamiza" data-title="Tamiza - South Bank">
      <a href="img/tamiza_5.jpg" data-lightbox="tamiza" data-title="Queen's Walk Window Gardens"></a>
      <a href="img/tamiza_6.jpg" data-lightbox="tamiza" data-title="Tamiza"></a>
-     <a href="../JPEG/Tamiza_7.jpg" data-lightbox="tamiza" data-title="Queen's Walk Window Gardens"></a>
+     <a href="img/tamiza_7.jpg" data-lightbox="tamiza" data-title="Queen's Walk Window Gardens"></a>
      <a href="img/tamiza_8.jpg" data-lightbox="tamiza" data-title="Queen's Walk Window Gardens"></a>
      <a href="img/tamiza_88.jpg" data-lightbox="tamiza" data-title="łódeczka policji"></a>
      <a href="img/tamiza_9.jpg" data-lightbox="tamiza" data-title="Tamiza"></a>
@@ -320,7 +346,7 @@ charakterystyczne dla Londynu.</p>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
      
 </div>
 </body>
