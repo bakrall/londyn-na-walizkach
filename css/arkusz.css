@@ -86,7 +86,7 @@ background-color: #DCDCDC;
 background-color: #000;
 }
 .mainpic {
-height: 440px;
+height: 430px;
 background: #808080 url(../img/krajobraztamiza.jpg) no-repeat;
 background-size: cover;
 background-position: center;
@@ -99,7 +99,7 @@ text-shadow: 1px 2px black;
 font: 5.2em Georgia, serif;
 }
 .mainpic h1 {
-margin:20px 20px;
+margin:40px 20px;
 }
 .mainpic h2 {
 font-size: 2.6em;
@@ -124,7 +124,7 @@ font-size: 4.2em;}
 font-size: 2em;}
 }
 .text {
-margin: 10px 10px 30px 12%;
+margin: 10px 10px 30px 13%;
 font-size: 1em;
 padding: 25px;
 width: 80%;
@@ -185,10 +185,10 @@ figcaption#lodz {
   color:#DCDCDC;
 }
 #fix {
-	margin-top: 20%;
+	margin-top: 16%;
 }
 #fixlg {
-	margin-top: 5%;
+	margin-top: 2%;
 }
 @media (min-height: 1000px) {
   #fixlg {
