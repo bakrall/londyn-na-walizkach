@@ -180,30 +180,29 @@ figcaption#lodz {
 	font-style: italic;
 	padding-left: 10px;
 }
-#fix {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-}
-@media (min-width: 1600px) {
-	#fixlg {
-	  position: absolute;
-	  bottom: 0;
-	  width: 100%;
-	}
-}
 .footer {
   background-color: #191919;
   color:#DCDCDC;
+}
+#fix {
+	margin-top: 20%;
+}
+#fixlg {
+	margin-top: 5%;
+}
+@media (min-height: 1000px) {
+  #fixlg {
+  	margin-top: 20%;
+  }
 }
 .footer a {
 text-decoration: none;
 line-height: 120%;
 font-size: 1em;
-color: #4682B4;
+color: #4682B4 ;
 }
 .footer a:hover {
-color:white;
+color: #fff;
 }
 .footer h4 {
 font-weight: bold;
