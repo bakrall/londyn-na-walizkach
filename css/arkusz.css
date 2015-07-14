@@ -51,7 +51,7 @@ table {
 
 body {
  background: #DCDCDC;
- font-size: 15px;
+ font-size: 16px;
  font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -86,53 +86,55 @@ background-color: #DCDCDC;
 background-color: #000;
 }
 .mainpic {
-height: 500px;
+height: 440px;
 background: #808080 url(../img/krajobraztamiza.jpg) no-repeat;
 background-size: cover;
-position: relative;
-margin-bottom: 10px;
+background-position: center;
+margin: 0 auto 10px;
+width: 90%;
 }
 .mainpic h1, h2 {
 color:#4682B4;
 text-shadow: 1px 2px black;
-font: 6em Georgia, serif;
+font: 5.2em Georgia, serif;
 }
 .mainpic h1 {
 margin:20px 20px;
 }
 .mainpic h2 {
-font-size: 3em;
+font-size: 2.6em;
 margin-right: 5px;
 }
 @media (max-width: 350px) {
 .mainpic h1 {
-font-size: 3.7em;}
+font-size: 2.7em;}
 .mainpic h2 {
-font-size: 2em;}
+font-size: 1.5em;}
 }
 @media (min-width: 351px) and (max-width: 400px) {
 .mainpic h1 {
-font-size: 4em;}
+font-size: 3.5em;}
 .mainpic h2 {
-font-size: 2em;}
+font-size: 1.5em;}
 }
 @media (min-width:401px) and (max-width: 600px) {
 .mainpic h1 {
-font-size: 5em;}
+font-size: 4.2em;}
 .mainpic h2 {
-font-size: 2.5em;}
+font-size: 2em;}
 }
 .text {
-margin: 10px 10px 30px 20px;
-font-size: 1.1em;
+margin: 10px 10px 30px 12%;
+font-size: 1em;
 padding: 25px;
+width: 80%;
 }
 .panel-group {
 margin: 10px 10px 30px 20px;
-font-size: 1.1em;
+font-size: 1em;
 }
 .text h3, .text2 h3 {
-font-size: 2em;
+font-size: 1.5em;
 font-weight: bold;
 padding: 5px 0px;
 margin-bottom: 30px;
@@ -151,7 +153,7 @@ margin-bottom: 30px;
 }
 .text2 li {
 	line-height: 155%;
-	font-size: 1.5em;
+	font-size: 1.1em;
 	padding-left: 10px;
 }
 .text2 a {
@@ -174,7 +176,7 @@ text-align: justify;
 }
 figcaption#lodz {
 	color:#000;
-	font-size: 0.9em;
+	font-size: 0.8em;
 	font-style: italic;
 	padding-left: 10px;
 }
@@ -197,7 +199,7 @@ figcaption#lodz {
 .footer a {
 text-decoration: none;
 line-height: 120%;
-font-size: 1.1em;
+font-size: 1em;
 color: #4682B4;
 }
 .footer a:hover {
@@ -206,17 +208,18 @@ color:white;
 .footer h4 {
 font-weight: bold;
 padding: 10px 0px 5px;
-font-size: 1.2em;
+font-size: 1.1em;
 }
 .footer p {
 padding:20px 0px;
+font-size: 0.8em;
 }
 ol{
 list-style-type: decimal;
 padding: 10px 30px;
 }
 .galeria {
-margin: 0px 0px 80px 0px;
+margin: 0px 0px 80px 12%;
 }
 @media (max-width: 390px) {
 	.galeria {
