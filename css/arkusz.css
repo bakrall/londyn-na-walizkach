@@ -123,21 +123,20 @@ font-size: 4.2em;}
 .mainpic h2 {
 font-size: 2em;}
 }
-.text {
+.text, .panel-group {
 margin: 10px 10px 30px 13%;
 font-size: 1em;
 padding: 25px;
 width: 80%;
 }
 .panel-group {
-margin: 10px 10px 30px 20px;
-font-size: 1em;
+padding: 0px;
 }
 .text h3, .text2 h3 {
 font-size: 1.5em;
 font-weight: bold;
 padding: 5px 0px;
-margin-bottom: 30px;
+margin-bottom: 20px;
 }
 @media (max-width: 350px) {
 	.text h3{
@@ -159,7 +158,8 @@ margin-bottom: 30px;
 .text2 a {
 	color: #9A9A9A;
 }
-.text2 a:hover, .text2 a:link {
+.text2 a:hover, .text2 a:link , 
+.panel a:hover, .panel a:link{
 	text-decoration: none;
 }
 h3#ciek {
