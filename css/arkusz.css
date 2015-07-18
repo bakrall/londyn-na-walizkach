@@ -288,22 +288,36 @@ left:0;
 .galeria li:nth-of-type(2n) a {
 left: -50px;
 }
-address {
+address p {
 	font-style: italic;
+	text-indent: 0;
 }
 @media (max-width: 350px) {
 	address p {
-		font-size: 0.9em;
+		font-size: 0.8em;
 		text-indent: 0em;
+		padding: 0;
 	}
 }
-p.dwa {
-	text-indent: 0em;
-}
+
 strong {
 	font-weight: bold;
 }
 time {
 	font-style: italic;
 	font-size: 0.9em;
+}
+.fb-like {
+	height: 20px;
+	width: 100px;
+}
+#button-count {
+	-webkit-border-radius: 5px; 
+-moz-border-radius: 5px; 
+border-radius: 5px; 
+background-color:#FFFFFF; 
+padding: 15px; 
+margin: 15px; 
+box-shadow:0 1px 11px rgba(0,0,0,0.15); 
+}
 }
