@@ -215,7 +215,8 @@ font-size: 0.8em;
 }
 ol{
 list-style-type: decimal;
-padding: 10px 30px;
+padding: 10px 43px;
+line-height: 125%;
 }
 .galeria {
 margin: 0px 0px 80px 12%;
@@ -307,17 +308,4 @@ time {
 	font-style: italic;
 	font-size: 0.9em;
 }
-.fb-like {
-	height: 20px;
-	width: 100px;
-}
-#button-count {
-	-webkit-border-radius: 5px; 
--moz-border-radius: 5px; 
-border-radius: 5px; 
-background-color:#FFFFFF; 
-padding: 15px; 
-margin: 15px; 
-box-shadow:0 1px 11px rgba(0,0,0,0.15); 
-}
-}
+
