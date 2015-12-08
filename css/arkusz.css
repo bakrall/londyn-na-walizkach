@@ -50,7 +50,7 @@ table {
 /*tutaj zaczyna sie moje*/
 
 body {
- background: #DCDCDC;
+ background: #dcdcdc;
  font-size: 16px;
  font-family: Arial, Helvetica, sans-serif;
 }
@@ -107,19 +107,20 @@ margin-right: 5px;
 }
 @media (max-width: 350px) {
 .mainpic h1 {
-font-size: 2.7em;}
+font-size: 2.7em;
+margin: 20px 0;}
 .mainpic h2 {
 font-size: 1.5em;}
 }
 @media (min-width: 351px) and (max-width: 400px) {
 .mainpic h1 {
-font-size: 3.5em;}
+font-size: 3.1em;}
 .mainpic h2 {
 font-size: 1.5em;}
 }
 @media (min-width:401px) and (max-width: 600px) {
 .mainpic h1 {
-font-size: 4.2em;}
+font-size: 3.8em;}
 .mainpic h2 {
 font-size: 2em;}
 }
@@ -229,18 +230,15 @@ line-height: 125%;
 	}
 }
 .galeria {
-margin: 0px 0px 80px 12%;
+margin: 0px 0px 80px;
 }
-@media (max-width: 390px) {
+@media (max-width: 991px) {
 	.galeria {
-	    margin: 0 auto 80px auto;
-	    width:100%;}
+		width: 200px;
+		margin: 0 auto 100px;
+	}
 }
-@media (min-width: 391px) and (max-width: 970px) {
-	.galeria {
-	    margin: 0 auto 80px auto;
-	    width:50%;}
-}
+
 a#sadburyhill, a#streatham, a#leyton, a#tamiza, a#rozne {
 	text-decoration: none;
     text-align: right;
@@ -263,10 +261,9 @@ a#sadburyhill, a#streatham, a#leyton, a#tamiza, a#rozne {
 	    height: 200px;
 	}
 }
-@media (min-width: 960px) and (max-width: 1165px) {
+@media (max-width: 330px) {
 	a#sadburyhill, a#streatham, a#leyton, a#tamiza, a#rozne {
 		width: 230px;
-	    height: 200px;
 	}
 }
 aside span {
@@ -318,4 +315,3 @@ time {
 	font-style: italic;
 	font-size: 0.9em;
 }
-
