@@ -213,9 +213,7 @@ font-size: 1.1em;
 .footer p {
 padding:20px 0px;
 font-size: 0.8em;
-display: inline-block;
-text-align: right;
-width: 90%;
+margin-top: 20px;
 }
 ol{
 list-style-type: decimal;
@@ -318,4 +316,6 @@ time {
 	font-style: italic;
 	font-size: 0.9em;
 }
-
+.fb_iframe_widget {
+	margin-top: 20px;
+}
