@@ -119,6 +119,7 @@ font-size: 15px;
 
 .navbar-toggle {
 background-color: #DCDCDC;
+margin-right: 20px;
 }
 .icon-bar {
 background-color: #000;
@@ -358,9 +359,7 @@ time {
 	margin-top: 20px;
 }
 #base {
-background: url(../img/stars-1.png),
-
-;
+/*background: url(../img/stars-1.png);*/
 background-color: #1a2433;
 position: relative;
 -webkit-animation: a1 40s linear infinite;
@@ -369,7 +368,7 @@ position: relative;
 -o-animation: a1 40s linear infinite;
 animation: a1 40s linear infinite;
 }
-@-webkit-keyframes a1 {
+/*@-webkit-keyframes a1 {
   0%   { background-position: 0 0; }
   100% { background-position: 70% 100%; }
 }
@@ -442,7 +441,7 @@ animation: a3 40s linear infinite;
 @keyframes a3 {
    0%  { background-position: 0 0; }
   100% { background-position: 30% 100%; }
-}
+}*/
 #content {
 	padding: 0;
 	position: relative;
