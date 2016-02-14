@@ -385,7 +385,6 @@ time {
 	margin-top: 20px;
 }
 #base {
-/*background: url(../img/stars-1.png);*/
 background-color: #1a2433;
 background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0) 5%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 95%),
                   -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0) 5%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 95%);
@@ -400,11 +399,6 @@ background-image: -linear-gradient(-45deg, rgba(255, 255, 255, 0) 5%, rgba(255, 
 background-size: 100% 95px;
 
 position: relative;
-/*-webkit-animation: a1 40s linear infinite;
--moz-animation: a1 40s linear infinite;
--ms-animation: a1 40s linear infinite;
--o-animation: a1 40s linear infinite;
-animation: a1 40s linear infinite;*/
 }
 @media(max-width: 991px) {
 	#base {
@@ -418,80 +412,6 @@ animation: a1 40s linear infinite;*/
 		padding: 0;
 	}
 }
-/*@-webkit-keyframes a1 {
-  0%   { background-position: 0 0; }
-  100% { background-position: 70% 100%; }
-}
-@-moz-keyframes a1 {
-   0%  { background-position: 0 0; }
-  100% { background-position: 70% 100%; }
-}
-@-o-keyframes a1 {
-  0 0%  { background-position: 0 0; }
-  100% { background-position: 70% 100%; }
-}
-@keyframes a1 {
-   0%  { background-position: 0 0; }
-  100% { background-position: 70% 100%; }
-}
-#base-second-snow {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: url(../img/stars-2.png);
-	-webkit-animation: a2 40s linear infinite;
--moz-animation: a2 40s linear infinite;
--ms-animation: a2 40s linear infinite;
--o-animation: a2 40s linear infinite;
-animation: a2 40s linear infinite;
-}
-@-webkit-keyframes a2 {
-  0%   { background-position: 0 0; }
-  100% { background-position: 10% 100%; }
-}
-@-moz-keyframes a2 {
-   0%  { background-position: 0 0; }
-  100% { background-position: 10% 100%; }
-}
-@-o-keyframes a2 {
-   0%  { background-position: 0 0; }
-  100% { background-position: 10% 100%; }
-}
-@keyframes a2 {
-   0%  { background-position: 0 0; }
-  100% { background-position: 10% 100%; }
-}
-#base-third-snow {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: url(../img/stars-3.png);
-		-webkit-animation: a3 40s linear infinite;
--moz-animation: a3 40s linear infinite;
--ms-animation: a3 40s linear infinite;
--o-animation: a3 40s linear infinite;
-animation: a3 40s linear infinite;
-}
-@-webkit-keyframes a3 {
-  0%   { background-position: 0 0; }
-  100% { background-position: 30% 100%; }
-}
-@-moz-keyframes a3 {
-  0%  { background-position: 0 0; }
-  100% { background-position: 30% 100%; }
-}
-@-o-keyframes a3 {
-  00%  { background-position: 0 0; }
-  100% { background-position: 30% 100%; }
-}
-@keyframes a3 {
-   0%  { background-position: 0 0; }
-  100% { background-position: 30% 100%; }
-}*/
 #content {
 	padding: 0;
 	position: relative;
