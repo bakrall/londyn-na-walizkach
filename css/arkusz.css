@@ -256,6 +256,11 @@ figcaption#lodz {
 .footer li {
 	margin-bottom: 5px;
 }
+@media(max-width: 991px) {
+	.footer li {
+		margin-bottom: 10px;
+	}
+}
 .footer a {
 text-decoration: none;
 line-height: 120%;
@@ -301,7 +306,7 @@ margin: 10px 0 80px 55px;
 }
 @media (max-width: 991px) {
 	.galeria {
-		width: 200px;
+		width: 220px;
 		margin: 0 auto 100px;
 	}
 }
