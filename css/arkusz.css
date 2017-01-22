@@ -251,11 +251,11 @@ p {
 	text-indent: 1em;
 	text-align: justify;
 }
-#lodz {
+.lodz {
 	width: 100%;
 	margin-top: 20px;
 }
-figcaption#lodz {
+figcaption.lodz {
 	color:#000;
 	font-size: 0.8em;
 	font-style: italic;
@@ -471,4 +471,7 @@ time {
 	margin-right: auto;
 }
 
+.hostels {
+	margin-top: 20px;
+}
 
