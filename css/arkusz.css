@@ -167,6 +167,7 @@ a#zero:hover {
 	font-size: 1em;
 	font-weight: 600;
 	padding: 25px 50px 25px 25px;
+	background: #ffffff;
 }
 
 @media(min-width: 992px) and (max-width: 1100px) {
@@ -237,6 +238,8 @@ figcaption.lodz {
 }
 .pager {
 	font-weight: 600;
+	text-align: left;
+	margin-left: 60px;
 }
 @media (max-width: 801px) {
 	.pager li:first-child a{
@@ -415,15 +418,21 @@ time {
 		padding: 0;
 	}
 }
+.overlay-content {
+	min-height: 780px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	opacity: 0.6;
+	background: #f5f5f5;
+}
 #content {
 	padding: 0;
-	position: relative;
-	top: 0;
 	margin-left: auto;
-	background: transparent;
 	max-width: 1170px;
-	z-index: 2;
-	
+	height: 100%;
+	position: relative;
 }
 #content-base {
 	background: #808080 url(../img/krajobraztamiza.jpg) no-repeat;
@@ -445,4 +454,11 @@ time {
 
 .left-content {
 	background: #f5f5f5;
+}
+
+.right-content {
+	min-height: 780px;
+	background: url(../img/krajobraztamiza.jpg);
+	background-size: cover;
+	position: relative;;
 }
