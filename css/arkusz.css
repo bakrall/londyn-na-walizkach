@@ -169,7 +169,8 @@ a#zero:hover {
 }
 
 #origins,
-#overview {
+#overview,
+#articles {
 	width: 1000px;
 	margin: 4rem auto;
 	max-width: 80%;
@@ -183,7 +184,8 @@ a#zero:hover {
 
 .origins__heading,
 .overview__heading,
-.gallery__heading {
+.gallery__heading,
+.articles__heading {
 	font-size: 2rem;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-weight: bold;
@@ -318,6 +320,70 @@ a#tamiza {
 a#various {
   	background-image: url(../img/seashell.jpg);
 }
+
+.articles__item {
+	display: block;
+	width: 46%;
+	margin: 1%;
+	float: left;
+	font-size: 1.5rem;
+	text-align: center;
+	height: 4rem;
+	line-height: 2.5;
+
+}
+
+.articles__list:nth-of-type(2n) {
+	/*float: right;*/
+}
+
+.articles__link {
+	color: #191919;
+	display: inline-block;
+	width: 100%;
+	position: relative;
+}
+
+.articles__link:after {
+	content: '';
+	display: block;
+	width: 5rem;
+	border-bottom: 3px solid rgba(0,0,0,0.8);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+/*.articles__link:before {
+	content: '';
+	display: block;
+	width: 5rem;
+	border-bottom: 3px solid rgba(0,0,0,0.8);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}*/
+
+.articles__link:after {
+	bottom: 0;
+	transition: 0.2s ease;
+}
+
+.articles__item:hover .articles__link:after {
+	border: 3px solid rgba(0,0,0,0.8);
+	height: 60px;
+	width: 100%;
+}
+
+.articles__item:hover .articles__link {
+	text-decoration: none;
+	color: #191919;
+}
+
+/*.articles__link:before {
+	top: -3px;
+}*/
 
 /*.mainpic h1, h2 {
 	color:#4682B4;
