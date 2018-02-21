@@ -49,9 +49,18 @@ table {
 }
 /*tutaj zaczyna sie moje*/
 
-body {
+html {
  	font-size: 16px;
- 	font-family: Arial, Helvetica, sans-serif;
+ 	/*font-family: Arial, Helvetica, sans-serif;*/
+ 	font-family: Verdana, Geneva, sans-serif;
+}
+
+body {
+ 	color: #191919;	
+}
+
+header p {
+	text-indent: 0;
 }
 
 .navbar {
@@ -62,7 +71,8 @@ body {
 	z-index: 10;
 }
 .navbar a {
-	color: #DCDCDC;
+	/*color: #DCDCDC;*/
+	color: #f7f7f7;
 }
 .navbar a:hover {
 	color: #000;
@@ -123,7 +133,152 @@ a#zero:hover {
 	background-color: #000;
 }
 
-.mainpic h1, h2 {
+.intro__header {
+	/*font-family: "Montserrat", sans-serif;*/
+	font-family: Impact, Charcoal, sans-serif;
+	/*font-family: "Trebuchet MS", Helvetica, sans-serif;*/
+	/*font-family: "Arial Black", Gadget, sans-serif;*/
+	/*font-family: "Comic Sans MS", cursive, sans-serif;*/
+	/*font-family: Georgia, serif;*/
+	font-size: 5rem;
+	font-weight: bold;
+	color: #191919;
+	width: 70%;
+	padding: 7rem 2rem;
+	text-align: left;
+	position: relative;
+	/*text-shadow: 3px 1px 0 rgba(0,0,0,0.1);*/
+}
+
+.intro__header p {
+	margin-top: 2rem;
+	font-size: 3.5rem;
+	text-align: left;
+	text-indent: 0;
+}
+
+.intro__header:before {
+	content: '';
+	display: block;
+	width: 100px;
+	height: 10px;
+	border-top: 3px solid #fff;
+	position: absolute;
+	left: 2.1rem;
+	top: 6.5rem;
+}
+
+#origins,
+#overview {
+	width: 1000px;
+	margin: 4rem auto;
+	max-width: 80%;
+}
+
+#overview,
+#gallery {
+	margin-top: 3rem;
+}
+
+
+.origins__heading,
+.overview__heading,
+.gallery__heading {
+	font-size: 2rem;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight: bold;
+	/*font-family: Georgia, serif;*/
+	padding: 2rem 1rem 3rem;
+	text-align: center;
+}
+
+.gallery__heading {
+	padding-bottom: 3.75rem;
+}
+
+.origins__text,
+.overview__text {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.link_overview {
+	color: #23527c;
+	font-weight: bold;
+	font-size: 1.1rem;
+	text-align: center;
+	padding: 0.4rem;
+}
+
+.link_overview:hover {
+	background: rgba(65,66,84,0.1);
+}
+
+#gallery {
+	padding: 0 1rem;
+}
+
+.gallery__list {
+	width: 100%;
+	max-width: 1198px;
+	margin: 0 auto;
+}
+
+.gallery__item {
+	width: 46%;
+	margin: 0 1% 6rem;
+	float: left;
+	height: 380px;
+	box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.gallery__item:nth-of-type(2n) {
+	float: right;
+}
+
+.gallery__item__tile {
+	width: 100%;
+	height: 300px;
+	display: block;	
+	background-size: cover;
+	background-position: center;
+}
+
+.gallery__item a {
+	position: relative;
+	bottom: 0;
+	left: 0;
+}
+
+.gallery__item__title {
+	position: absolute;
+	top: 100%;
+	line-height: 2;
+	color: #191919;
+	text-align: center;
+	width: 100%;
+	padding: 1rem 0;
+	font-size: 1.5rem;
+	font-weight: bold;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;;
+}
+
+a#sadburyhill{
+	background-image: url(../img/sadburyhill.jpg);
+}
+a#streatham {
+  	background-image: url(../img/streatham.jpg);
+}
+a#leyton {
+  	background-image: url(../img/leytongardens.jpg);
+}
+a#tamiza {
+  	background-image: url(../img/towerbridge.jpg);
+}
+a#rozne {
+  	background-image: url(../img/globetheatre.jpg);
+}
+
+/*.mainpic h1, h2 {
 	color:#4682B4;
 	text-shadow: 1px 2px black;
 	font: 5.2em Georgia, serif;
@@ -153,7 +308,7 @@ a#zero:hover {
 		font-size: 3.8em;}
 	.mainpic h2 {
 		font-size: 2em;}
-}
+}*/
 .panel-group {
 	margin: 10px 10px 30px 5%;
 	font-size: 1em;
@@ -222,14 +377,14 @@ h3#ciek {
 	margin-bottom: 0px;
 }
 p {
-	line-height: 125%;
-	text-indent: 1em;
+	line-height: 1.4;
 	text-align: justify;
 }
 .lodz {
 	width: 100%;
 	margin-top: 20px;
 }
+
 figcaption.lodz {
 	color:#000;
 	font-size: 0.8em;
@@ -247,7 +402,7 @@ figcaption.lodz {
 }
 .footer {
   	background-color: #191919;
-  	color:#DCDCDC;
+  	color: #f7f7f7;
   	position: relative;
   	z-index: 10;
 }
@@ -274,7 +429,7 @@ figcaption.lodz {
 	text-decoration: none;
 	line-height: 120%;
 	font-size: 1em;
-	color: #4682B4 ;
+	color: #ccc;
 }
 .footer a:hover {
 	color: #fff;
@@ -306,7 +461,7 @@ ol{
 		padding-left: 45px;
 	}
 }
-.galeria {
+/*.galeria {
 	margin: 60px auto;
 	width: 235px;
 }
@@ -350,21 +505,7 @@ a#sadburyhill, a#streatham, a#leyton, a#tamiza, a#rozne {
 aside span {
 	vertical-align: bottom;
 }
-a#sadburyhill{
-	background-image: url(../img/sadburyhill.jpg);
-}
-a#streatham {
-  	background-image: url(../img/streatham.jpg);
-}
-a#leyton {
-  	background-image: url(../img/leytongardens.jpg);
-}
-a#tamiza {
-  	background-image: url(../img/towerbridge.jpg);
-}
-a#rozne {
-  	background-image: url(../img/globetheatre.jpg);
-}
+
 .galeria li {
 	height: 110px;
 }
@@ -380,7 +521,7 @@ a#rozne {
 }
 .galeria li:nth-of-type(2n) a {
 	left: -50px;
-}
+}*/
 address p {
 	font-style: italic;
 	text-indent: 0;
@@ -424,7 +565,8 @@ time {
 	top: 0;
 	right: 0;
 	left: 0;
-	opacity: 0.6;
+	/*opacity: 0.6;*/
+	opacity: 0;
 	background: #f5f5f5;
 }
 #content {
@@ -435,6 +577,7 @@ time {
 	position: relative;
 }
 #content-base {
+	/*background: #808080 url(../img/krajobraztamiza.jpg) no-repeat;*/
 	background: #808080 url(../img/krajobraztamiza.jpg) no-repeat;
 	opacity: 0.15;
 	height: 100%;
@@ -456,9 +599,46 @@ time {
 	background: #f5f5f5;
 }
 
-.right-content {
+.intro {
 	min-height: 780px;
-	background: url(../img/krajobraztamiza.jpg);
+	/*background: url(../img/krajobraztamiza.jpg);*/
+	background: url(../img/luca-micheli-422053-unsplash.jpg);
 	background-size: cover;
 	position: relative;;
+}
+
+.intro__button {
+	background: rgba(0,0,0,0.3);
+	outline: none;
+	border: 3px solid #191919;
+	border: 3px solid #fff;
+	display: block;
+	float: right;
+	height: 60px;
+	width: 250px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	/*color: #191919;*/
+	color: #fff;
+	margin: 0.8rem 8rem;
+	line-height: 3;
+	text-align: center;
+	transition: 0.4s;
+}
+
+.intro__button:nth-of-type(2n) {
+	clear: both;
+}
+
+.intro__button:hover {
+	background: rgba(0,0,0,0.7);
+	color: #fff;
+	text-decoration: none;
+}
+
+.clearfix {
+	content: '';
+	display: block;
+	clear: both;
 }
