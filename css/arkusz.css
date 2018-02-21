@@ -381,6 +381,17 @@ a#various {
 	color: #191919;
 }
 
+.image-decoration {	
+	height: auto;	
+	background: url(../img/rob-bye-13767-unsplash.jpg);	
+	/*background: url(../img/marko-pekic-145777-unsplash.jpg);*/	
+	/*background: url(../img/luca-micheli-422053-unsplash.jpg);	*/
+	background-size: cover;	
+	height: 600px;	
+	margin: 6rem 0;	
+	background-position: center;	
+}
+
 /*.articles__link:before {
 	top: -3px;
 }*/
