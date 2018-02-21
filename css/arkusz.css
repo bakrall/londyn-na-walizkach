@@ -249,6 +249,7 @@ a#zero:hover {
 	display: block;	
 	background-size: cover;
 	background-position: center;
+	transition: 0.7s;
 	
 }
 
