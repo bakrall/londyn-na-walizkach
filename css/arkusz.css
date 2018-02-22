@@ -74,11 +74,28 @@ header p {
 	overflow: hidden;
 }
 
+/*.navbar-nav > li > a {
+	height: 3.75rem;
+}*/
+
 .nav > li > a:hover,
 .nav > li > a:focus {
 	background: #191919;
-	/*box-shadow: 0 0 0 2px #fff, 0 0 0 2px #fff;*/
 	outline: 2px solid #fff;
+	outline-offset: -2px;
+}
+
+@media (max-width: 767px) {
+	.nav > li > a {
+		height: 3.75rem;
+		line-height: 2.5;
+		padding-left: 2rem;
+	}
+
+	.nav {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 }
 
 .navbar {
@@ -658,6 +675,10 @@ time {
 @media (max-width: 350px) {
 	html {
 		font-size: 14px;
+	}
+
+	.navbar-brand {
+		display: none;
 	}
 
 	.intro__header {
