@@ -129,8 +129,55 @@ a#zero:hover {
 	background-color: #DCDCDC;
 	margin-right: 20px;
 }
+
 .icon-bar {
 	background-color: #000;
+}
+
+.intro {
+	min-height: 780px;
+	/*background: url(../img/krajobraztamiza.jpg);*/
+	/*background: url(../img/luca-micheli-422053-unsplash.jpg);*/
+	/*background: url(../img/alessia-caudiero-1867-unsplash.jpg);*/
+	background: url(../img/simon-rae-422576-unsplash.jpg);
+	/*background: url(../img/benjamin-davies-484913-unsplash.jpg);*/
+	background-size: cover;
+	position: relative;
+	/*background-position: bottom;*/
+}
+
+.intro__buttons__container {
+	padding-left: 2rem;
+}
+
+.intro__button {
+	background: rgba(0,0,0,0.3);
+	outline: none;
+	border: 3px solid #191919;
+	border: 3px solid #fff;
+	display: inline-block;
+	/*float: right;*/
+	height: 60px;
+	width: 250px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	/*color: #191919;*/
+	color: #fff;
+	margin: 0.8rem;
+	line-height: 3;
+	text-align: center;
+	transition: 0.4s;
+}
+
+.intro__button:nth-of-type(2n) {
+	clear: both;
+}
+
+.intro__button:hover {
+	background: rgba(0,0,0,0.7);
+	color: #fff;
+	text-decoration: none;
 }
 
 .intro__header {
@@ -170,7 +217,8 @@ a#zero:hover {
 
 #origins,
 #overview,
-#articles {
+#articles,
+#contact {
 	width: 1000px;
 	margin: 4rem auto;
 	max-width: 80%;
@@ -185,7 +233,8 @@ a#zero:hover {
 .origins__heading,
 .overview__heading,
 .gallery__heading,
-.articles__heading {
+.articles__heading,
+.contact__heading {
 	font-size: 2rem;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-weight: bold;
@@ -391,10 +440,24 @@ a#various {
 	/*background: url(../img/luca-micheli-422053-unsplash.jpg);	*/
 	/*background: url(../img/jamie-street-94244-unsplash.jpg);	*/
 	background: url(../img/benjamin-davies-484913-unsplash.jpg);	
+	/*background: url(../img/alessia-caudiero-1867-unsplash.jpg);	*/
+	/*background: url(../img/simon-rae-422576-unsplash.jpg);*/
 	background-size: cover;	
 	height: 700px;	
 	margin: 6rem 0;	
 	background-position: bottom -30px left;	
+}
+
+.contact__details {
+	width: 200px;
+	text-align: center;
+	font-size: 1.5rem;
+	margin: 0 auto;
+}
+
+.contact__details p {
+	font-style: italic;
+	text-indent: 0;
 }
 
 /*.articles__link:before {
@@ -529,7 +592,8 @@ figcaption.lodz {
   	position: relative;
   	z-index: 10;
 }
-#fix {
+
+/*#fix {
 	margin-top: 16%;
 }
 #fixlg {
@@ -539,7 +603,8 @@ figcaption.lodz {
   #fixlg {
   	margin-top: 20%;
   }
-}
+}*/
+
 .footer li {
 	margin-bottom: 5px;
 }
@@ -567,7 +632,6 @@ figcaption.lodz {
 .footer p {
 	padding:20px 0px;
 	font-size: 0.8em;
-	margin-top: 20px;
 }
 ol{
 	list-style-type: decimal;
@@ -645,18 +709,15 @@ aside span {
 .galeria li:nth-of-type(2n) a {
 	left: -50px;
 }*/
-address p {
-	font-style: italic;
-	text-indent: 0;
-}
-@media (max-width: 350px) {
+
+/*@media (max-width: 350px) {
 	address p {
 		font-size: 0.8em;
 		text-indent: 0em;
 		padding: 0;
 	}
 }
-
+*/
 strong {
 	font-weight: bold;
 }
@@ -720,47 +781,6 @@ time {
 
 .left-content {
 	background: #f5f5f5;
-}
-
-.intro {
-	min-height: 780px;
-	/*background: url(../img/krajobraztamiza.jpg);*/
-	/*background: url(../img/luca-micheli-422053-unsplash.jpg);*/
-	/*background: url(../img/alessia-caudiero-1867-unsplash.jpg);*/
-	background: url(../img/simon-rae-422576-unsplash.jpg);
-	background-size: cover;
-	position: relative;
-	/*background-position: bottom;*/
-}
-
-.intro__button {
-	background: rgba(0,0,0,0.3);
-	outline: none;
-	border: 3px solid #191919;
-	border: 3px solid #fff;
-	display: block;
-	float: right;
-	height: 60px;
-	width: 250px;
-	font-weight: bold;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	/*color: #191919;*/
-	color: #fff;
-	margin: 0.8rem 8rem;
-	line-height: 3;
-	text-align: center;
-	transition: 0.4s;
-}
-
-.intro__button:nth-of-type(2n) {
-	clear: both;
-}
-
-.intro__button:hover {
-	background: rgba(0,0,0,0.7);
-	color: #fff;
-	text-decoration: none;
 }
 
 .clearfix {
