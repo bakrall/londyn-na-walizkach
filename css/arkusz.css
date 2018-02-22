@@ -47,11 +47,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*tutaj zaczyna sie moje*/
+/*below my code*/
 
 html {
  	font-size: 16px;
- 	/*font-family: Arial, Helvetica, sans-serif;*/
  	font-family: Verdana, Geneva, sans-serif;
 }
 
@@ -64,7 +63,6 @@ header p {
 	text-indent: 0;
 }
 
-
 .container-fluid {
 	padding: 0;
 	overflow: hidden;
@@ -73,19 +71,16 @@ header p {
 .navbar {
 	background-color: #191919;
 	margin-bottom: 0;
-	/*margin-left: -20px;
-	margin-right: -20px;*/
 	z-index: 10;
 }
 .navbar a {
-	/*color: #DCDCDC;*/
 	color: #f7f7f7;
 }
 .navbar a:hover {
 	color: #000;
 }
 .navbar-right {
-	margin-right: 20px;
+	margin-right: 1.25rem;
 }
 
 @media(max-width: 767px) {
@@ -95,46 +90,16 @@ header p {
 	}
 }
 .navbar-header {
-	
-	margin-left: 20px;
+	margin-left: 1.25rem;
 }
-a#zero:hover {
+
+.nabar-brand:hover {
 	color:#DCDCDC;
-}
-.dropdown-menu {
-	background-color: #DCDCDC;
-	padding: 0;
-}
-
-.dropdown-menu .divider {
-	margin: 0;
-}
-
-.dropdown-menu li a {
-	font-size: 15px;
-	padding: 12px 20px;
-}
-
-.dropdown-menu li:last-child a:hover {
-	border-radius: 0 0 4px 4px;
-}
-
-@media (max-width: 767px) {
-	.dropdown-menu li a{
-		color: #DCDCDC;
-	}
-	.navbar-nav .open .dropdown-menu > li > a {
-		padding-top: 15px;
-		padding-bottom: 15px;
-	}
-	.dropdown-menu li:last-child a:hover {
-	border-radius: 0;
-	}
 }
 
 .navbar-toggle {
 	background-color: #DCDCDC;
-	margin-right: 20px;
+	margin-right: 1.25rem;
 }
 
 .icon-bar {
@@ -142,15 +107,10 @@ a#zero:hover {
 }
 
 .intro {
-	min-height: 780px;
-	/*background: url(../img/krajobraztamiza.jpg);*/
-	/*background: url(../img/luca-micheli-422053-unsplash.jpg);*/
-	/*background: url(../img/alessia-caudiero-1867-unsplash.jpg);*/
+	height: 48.75rem;
 	background: url(../img/simon-rae-422576-unsplash.jpg);
-	/*background: url(../img/benjamin-davies-484913-unsplash.jpg);*/
 	background-size: cover;
 	position: relative;
-	/*background-position: bottom;*/
 }
 
 .intro__buttons__container {
@@ -163,13 +123,11 @@ a#zero:hover {
 	border: 3px solid #191919;
 	border: 3px solid #fff;
 	display: inline-block;
-	/*float: right;*/
-	height: 60px;
+	height: 3.75rem;
 	width: 15.625rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	/*color: #191919;*/
 	color: #fff;
 	margin: 0.8rem;
 	line-height: 3;
@@ -177,7 +135,7 @@ a#zero:hover {
 	transition: 0.4s;
 }
 
-.intro__button:nth-of-type(2n) {
+.intro__button:nth-of-type(2) {
 	clear: both;
 }
 
@@ -201,7 +159,6 @@ a#zero:hover {
 	padding: 7rem 2rem;
 	text-align: left;
 	position: relative;
-	/*text-shadow: 3px 1px 0 rgba(0,0,0,0.1);*/
 }
 
 .intro__header__subtitle {
@@ -214,8 +171,8 @@ a#zero:hover {
 .intro__header:before {
 	content: '';
 	display: block;
-	width: 100px;
-	height: 10px;
+	width: 6.25rem;
+	height: 0.625rem;
 	border-top: 3px solid #fff;
 	position: absolute;
 	left: 2.1rem;
@@ -225,16 +182,17 @@ a#zero:hover {
 @media(max-width: 991px) {
 	.intro {
 		min-height: 580px;
+		height: 36.25rem;
 		background-position: bottom;
 	}
 
 	.intro__header__container {
-		max-width: 500px;
+		max-width: 31.25rem;
 	}
 
 	.intro__header {
 		font-size: 4rem;
-		padding: 3rem 1rem;
+		padding: 3rem 2rem;
 	}
 
 	.intro__header__subtitle {
@@ -243,7 +201,6 @@ a#zero:hover {
 	}
 
 	.intro__header:before {
-		left: 1.1rem;
 		top: 2.5rem;
 	}
 
@@ -256,7 +213,7 @@ a#zero:hover {
 #overview,
 #articles,
 #contact {
-	width: 1000px;
+	width: 62.5rem;
 	margin: 4rem auto;
 	max-width: 80%;
 }
@@ -303,14 +260,8 @@ a#zero:hover {
 
 #gallery {
 	padding: 0 1rem;
-	width: 1200px;
+	width: 75rem;
 	max-width: 90%;
-	margin: 0 auto;
-}
-
-.gallery__list {
-	width: 100%;
-	max-width: 1198px;
 	margin: 0 auto;
 }
 
@@ -321,9 +272,7 @@ a#zero:hover {
 }
 
 .gallery__item {
-	/*width: 46%;*/
 	width: 50%;
-	/*margin: 0 1% 6rem;*/
 	float: left;
 	height: 380px;
 	box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.05);
@@ -337,24 +286,19 @@ a#zero:hover {
 	}
 }
 
-.gallery__item:nth-of-type(2n) {
-	/*float: right;*/
-}
-
 .gallery__item__tile {
 	width: 100%;
-	/*height: 300px;*/
 	height: 100%;
 	display: block;	
 	background-size: cover;
 	background-position: center;
 	transition: 0.7s;
-	
 }
 
 .gallery__item:hover  .gallery__item__tile{
 	transform: scale(0.99);
 }
+
 .gallery__item a {
 	position: relative;
 	bottom: 0;
@@ -371,7 +315,6 @@ a#zero:hover {
 	height: 100%;
 	background: rgba(0,0,0,0);
 	z-index: 1;
-	/*opacity: 1;*/
 	transition: 0.7s;
 	pointer-events: none;
 }
@@ -386,12 +329,11 @@ a#zero:hover {
 	border: 3px solid #191919;
 	border: 3px solid #fff;
 	display: block;
-	height: 60px;
-	width: 250px;
+	height: 3.75rem;
+	width: 15.625rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	/*color: #191919;*/
 	color: #fff;
 	margin: 0 auto;
 	text-align: center;
@@ -406,27 +348,20 @@ a#zero:hover {
 }
 
 a#sadburyhill{
-	/*background-image: url(../img/sadburyhill.jpg);*/
 	background-image: url(../img/leyton_12.jpg);
 }
-/*a#streatham {
-  	background-image: url(../img/streatham.jpg);
-}*/
+
 a#leyton {
   	background-image: url(../img/leytongardens_7.jpg);
 }
-a#tamiza {
+
+a#thames {
   	background-image: url(../img/towerbridge.jpg);
 }
+
 a#various {
   	background-image: url(../img/seashell.jpg);
 }
-
-/*@media (max-width: 991px) {
-	#articles {
-		max-width: 98%;
-	}
-}*/
 
 .articles__item {
 	display: block;
@@ -437,7 +372,6 @@ a#various {
 	text-align: center;
 	height: 4rem;
 	line-height: 2.8;
-	/*padding: 1rem 0;*/
 	position: relative;
 }
 
@@ -462,10 +396,6 @@ a#various {
 	}
 }
 
-.articles__list:nth-of-type(2n) {
-	/*float: right;*/
-}
-
 .articles__link {
 	color: #191919;
 	display: inline-block;
@@ -482,17 +412,6 @@ a#various {
 	left: 50%;
 	transform: translateX(-50%);
 }
-
-
-/*.articles__link:before {
-	content: '';
-	display: block;
-	width: 5rem;
-	border-bottom: 3px solid rgba(0,0,0,0.8);
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-}*/
 
 .articles__item:after {
 	bottom: 0;
@@ -542,31 +461,21 @@ a#various {
 }
 
 @media (max-width: 402px) {
-	.articles__item:nth-of-type(3) {
-		height: 75px;
-	}
-
+	.articles__item:nth-of-type(3),
 	.articles__item:nth-of-type(3):after {
 		height: 75px;
 	}
 }
 
 .image-decoration {	
-	/*background: url(../img/rob-bye-13767-unsplash.jpg);	*/
-	/*background: url(../img/marko-pekic-145777-unsplash.jpg);*/	
-	/*background: url(../img/luca-micheli-422053-unsplash.jpg);	*/
-	/*background: url(../img/jamie-street-94244-unsplash.jpg);	*/
 	background: url(../img/benjamin-davies-484913-unsplash.jpg);	
-	/*background: url(../img/alessia-caudiero-1867-unsplash.jpg);	*/
-	/*background: url(../img/simon-rae-422576-unsplash.jpg);*/
 	background-size: cover;	
-	height: 700px;	
-	margin: 6rem 0;	
-	background-position: bottom -30px left;	
+	height: 43.75rem;	
+	margin: 6rem 0;	;	
 }
 
 .contact__details {
-	width: 200px;
+	width: 12.5rem;
 	text-align: center;
 	font-size: 1.5rem;
 	margin: 0 auto;
@@ -577,41 +486,6 @@ a#various {
 	text-indent: 0;
 }
 
-/*.articles__link:before {
-	top: -3px;
-}*/
-
-/*.mainpic h1, h2 {
-	color:#4682B4;
-	text-shadow: 1px 2px black;
-	font: 5.2em Georgia, serif;
-}
-.mainpic h1 {
-	margin: 20px;
-}
-.mainpic h2 {
-	font-size: 2.6em;
-	margin-right: 5px;
-}
-@media (max-width: 350px) {
-	.mainpic h1 {
-		font-size: 2.7em;
-		margin: 20px 0;}
-	.mainpic h2 {
-		font-size: 1.5em;}
-}
-@media (min-width: 351px) and (max-width: 400px) {
-	.mainpic h1 {
-		font-size: 3.1em;}
-	.mainpic h2 {
-		font-size: 1.5em;}
-}
-@media (min-width:401px) and (max-width: 600px) {
-	.mainpic h1 {
-		font-size: 3.8em;}
-	.mainpic h2 {
-		font-size: 2em;}
-}*/
 .panel-group {
 	margin: 10px 10px 30px 5%;
 	font-size: 1em;
@@ -898,11 +772,19 @@ time {
 		font-size: 14px;
 	}
 
+	.intro__header {
+		padding: 3rem 1rem;
+	}
+
+	.intro__header:before {
+		left: 1.1rem;
+	}
+
 	.intro__buttons__container {
 		padding-left: 0;
 	}
 
 	.intro__button {
-		line-height: 4;
+		line-height: 3.5;
 	}
 }
