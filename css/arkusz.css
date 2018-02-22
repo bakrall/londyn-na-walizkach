@@ -272,9 +272,9 @@ a#zero:hover {
 	max-height: 100%;
 	width: 100%;
 	height: 100%;
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0);
 	z-index: 1;
-	opacity: 1;
+	/*opacity: 1;*/
 	transition: 0.7s;
 	pointer-events: none;
 }
@@ -302,6 +302,10 @@ a#zero:hover {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+}
+
+..gallery__item:hover .gallery__item__button {
+	background: rgba(0,0,0,0.5);
 }
 
 a#sadburyhill{
@@ -382,14 +386,15 @@ a#various {
 }
 
 .image-decoration {	
-	height: auto;	
-	background: url(../img/rob-bye-13767-unsplash.jpg);	
+	/*background: url(../img/rob-bye-13767-unsplash.jpg);	*/
 	/*background: url(../img/marko-pekic-145777-unsplash.jpg);*/	
 	/*background: url(../img/luca-micheli-422053-unsplash.jpg);	*/
+	/*background: url(../img/jamie-street-94244-unsplash.jpg);	*/
+	background: url(../img/benjamin-davies-484913-unsplash.jpg);	
 	background-size: cover;	
-	height: 600px;	
+	height: 700px;	
 	margin: 6rem 0;	
-	background-position: center;	
+	background-position: bottom -30px left;	
 }
 
 /*.articles__link:before {
@@ -720,9 +725,12 @@ time {
 .intro {
 	min-height: 780px;
 	/*background: url(../img/krajobraztamiza.jpg);*/
-	background: url(../img/luca-micheli-422053-unsplash.jpg);
+	/*background: url(../img/luca-micheli-422053-unsplash.jpg);*/
+	/*background: url(../img/alessia-caudiero-1867-unsplash.jpg);*/
+	background: url(../img/simon-rae-422576-unsplash.jpg);
 	background-size: cover;
-	position: relative;;
+	position: relative;
+	/*background-position: bottom;*/
 }
 
 .intro__button {
