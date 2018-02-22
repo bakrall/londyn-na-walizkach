@@ -63,6 +63,12 @@ header p {
 	text-indent: 0;
 }
 
+
+.container-fluid {
+	padding: 0;
+	overflow: hidden;
+}
+
 .navbar {
 	background-color: #191919;
 	margin-bottom: 0;
@@ -632,6 +638,7 @@ figcaption.lodz {
 .footer p {
 	padding:20px 0px;
 	font-size: 0.8em;
+	padding-left: 2rem;
 }
 ol{
 	list-style-type: decimal;
@@ -728,21 +735,7 @@ time {
 .fb_iframe_widget {
 	margin-top: 20px;
 }
-#base {
-	position: relative;
-}
-@media(max-width: 991px) {
-	#base {
-		padding: 0;
-	}
-	#base .row {
-		margin-left: 0;
-		margin-right: 0;
-	}
-	#base .row .col-xs-12 {
-		padding: 0;
-	}
-}
+
 .overlay-content {
 	min-height: 780px;
 	position: absolute;
