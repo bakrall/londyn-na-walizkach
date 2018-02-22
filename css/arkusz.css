@@ -74,17 +74,23 @@ header p {
 	overflow: hidden;
 }
 
+.nav > li > a:hover,
+.nav > li > a:focus {
+	background: #191919;
+	/*box-shadow: 0 0 0 2px #fff, 0 0 0 2px #fff;*/
+	outline: 2px solid #fff;
+}
+
 .navbar {
 	background-color: #191919;
 	margin-bottom: 0;
 	z-index: 10;
 }
+
 .navbar a {
 	color: #f7f7f7;
 }
-.navbar a:hover {
-	color: #000;
-}
+
 .navbar-right {
 	margin-right: 1.25rem;
 }
@@ -97,10 +103,6 @@ header p {
 }
 .navbar-header {
 	margin-left: 1.25rem;
-}
-
-.nabar-brand:hover {
-	color:#DCDCDC;
 }
 
 .navbar-toggle {
