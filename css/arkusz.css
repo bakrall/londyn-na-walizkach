@@ -78,6 +78,11 @@ header p {
 	height: 3.75rem;
 }*/
 
+.nav {
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
+
 .nav > li > a:hover,
 .nav > li > a:focus {
 	background: #191919;
@@ -237,7 +242,8 @@ header p {
 #origins,
 #overview,
 #articles,
-#contact {
+#contact,
+.article__content {
 	width: 62.5rem;
 	margin: 4rem auto;
 	max-width: 80%;
@@ -266,10 +272,11 @@ header p {
 	padding-bottom: 3.75rem;
 }
 
-.origins__text,
-.overview__text {
+/*.origins__text,
+.overview__text,
+.article__content {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
+}*/
 
 .link_overview {
 	color: #23527c;
@@ -400,35 +407,14 @@ a#various {
 	position: relative;
 }
 
-@media (min-width: 576px) and (max-width: 1065px) {
-	.articles__item {
-		height: 82px;
-		line-height: 3.5;
-	}
-}
-
-@media (max-width: 680px) {
-	.articles__item {
-		width: 100%;
-		margin: 1% 0;
-	}
-}
-
-@media (max-width: 575px) {
-	.articles__item {
-		font-size: 1.2rem;
-		height: 60px;
-	}
-}
-
 .articles__link {
 	color: #191919;
 	display: inline-block;
-	width: 100%;
+	padding: 0 2rem;
 	position: relative;
 }
 
-.articles__item:after {
+.articles__link:after {
 	content: '';
 	display: block;
 	width: 5rem;
@@ -437,45 +423,67 @@ a#various {
 	left: 50%;
 	transform: translateX(-50%);
 	pointer-events: none;
-}
-
-.articles__item:after {
 	bottom: 0;
-	transition: 0.2s ease;
+	transition: 0.3s ease;
 }
 
-.articles__item:hover:after {
+.articles__link:hover:after {
 	border: 3px solid rgba(0,0,0,0.8);
 	height: 60px;
-	width: 105%;
+	width: 100%;
 }
 
-.articles__item:hover .articles__link {
+.articles__link:hover,
+.articles__link:active,
+.articles__link:focus {
 	text-decoration: none;
 	color: #191919;
 }
 
-@media (max-width: 1065px) {
-	.articles__item:nth-of-type(3):after {
-		bottom: -5px;
-	}
-
-	.articles__item:hover:after {
+@media (min-width: 731px) and (max-width: 1238px) {
+	.articles__item {
 		height: 82px;
+		line-height: 3.5;
 	}
 
-}
-
-@media (max-width: 575px) {
-	.articles__item:hover:after {
-		height: 60px;
-	}
-}
-
-@media (min-width: 681px) and (max-width: 1065px) {
 	.articles__item:nth-of-type(3) {
 		line-height: 1.2;
 		padding-top: 1rem;
+	}
+
+	.articles__item:nth-of-type(3) .articles__link:after {
+		bottom: -12px;
+	}
+
+	.articles__link:hover:after {
+		height: 82px;
+	}
+}
+
+@media (max-width: 730px) {
+	.articles__item {
+		width: 100%;
+		margin: 1% 0;
+	}
+}
+
+@media (max-width: 580px) {
+	.articles__item {
+		font-size: 1.2rem;
+		height: 60px;
+		margin-bottom: 1rem;
+	}
+
+	.articles__link:hover:after {
+		height: 53px;
+	}
+
+	.articles__item:nth-of-type(3) {
+		margin-bottom: 2rem;
+	}
+
+	.articles__item:nth-of-type(3) .articles__link:hover:after {
+		height: 72px;
 	}
 }
 
@@ -484,12 +492,23 @@ a#various {
 		line-height: 1.2;
 		padding-top: 1rem;
 	}
+
+	.articles__item:nth-of-type(3) .articles__link:after {
+		bottom: -12px;
+	}
 }
 
 @media (max-width: 402px) {
-	.articles__item:nth-of-type(3),
-	.articles__item:nth-of-type(3):after {
+	.articles__item:nth-of-type(3) {
 		height: 75px;
+	}
+
+	.articles__item:nth-of-type(3) .articles__link:hover:after {
+		height: 65px;
+	}
+
+	.articles__link:hover:after {
+		height: 46px;
 	}
 }
 
@@ -510,6 +529,46 @@ a#various {
 .contact__details p {
 	font-style: italic;
 	text-indent: 0;
+}
+
+.article_individual__heading {
+	font-size: 4rem;
+	text-align: center;
+	padding: 4rem 2rem 2rem;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+@media (max-width: 767px) {
+	.article_individual__heading {
+		font-size: 3rem;
+	}
+}
+
+.article__decoration-upper {
+		/*background: url(../img/benjamin-davies-484913-unsplash.jpg);*/
+	background: url(../img/luca-micheli-422053-unsplash.jpg);
+	background-size: cover;
+	background-position: bottom 34% left;
+	height: 16.25rem;
+}
+
+.article__content {
+	width: 62.5rem;
+	margin: 3rem auto;
+	max-width: 80%;
+	/*font-size: 1.1rem;*/
+}
+
+.article__list_places {
+	list-style-type: disc;
+	padding: 10px 0px 10px 60px;
+	line-height: 125%;
+}
+
+@media (max-width: 690px) {
+	.article__list_places {
+		padding-left: 1rem;
+	}
 }
 
 .panel-group {
@@ -552,7 +611,7 @@ a#various {
 		font-size: 1.4em;
 	}
 }
-.text2 {
+/*.text2 {
 	margin-left: 20px;
 	margin-bottom: 30px;
 }
@@ -566,7 +625,7 @@ a#various {
 }
 .text2 a {
 	color: #9A9A9A;
-}
+}*/
 .text2 a:hover, .text2 a:link , 
 .panel a:hover, .panel a:active, .panel a:link{
 	text-decoration: none;
@@ -616,23 +675,6 @@ figcaption.lodz {
 	padding-left: 2rem;
 }
 
-ol{
-	list-style-type: decimal;
-	padding: 10px 0px 10px 60px;
-	line-height: 125%;
-}
-
-@media (max-width: 390px) {
-	ol {
-		padding-left: 25px;
-	}
-}
-
-@media (min-width: 391px) and (max-width: 520px) {
-	ol {
-		padding-left: 45px;
-	}
-}
 
 strong {
 	font-weight: bold;
@@ -653,20 +695,6 @@ time {
 	max-width: 1170px;
 	height: 100%;
 	position: relative;
-}
-#content-base {
-	/*background: #808080 url(../img/krajobraztamiza.jpg) no-repeat;*/
-	background: #808080 url(../img/krajobraztamiza.jpg) no-repeat;
-	opacity: 0.15;
-	height: 100%;
-	width: 100%;
-	max-width: 1170px;
-	z-index: 1;
-	position: absolute;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-
 }
 
 .hostels {
