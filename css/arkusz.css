@@ -571,6 +571,28 @@ a#various {
 	}
 }
 
+.list__hostels__item{
+	margin-bottom: 3rem;
+}
+
+.dd__link_hostel {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin: 0.5rem 0;
+}
+
+.list__hostels__title {
+	font-weight: bold;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.list__hostels__description {
+	line-height: 1.4;
+	text-align: justify;
+}
+
 .panel-group {
 	margin: 10px 10px 30px 5%;
 	font-size: 1em;
@@ -695,10 +717,6 @@ time {
 	max-width: 1170px;
 	height: 100%;
 	position: relative;
-}
-
-.hostels {
-	margin-top: 20px;
 }
 
 @media (max-width: 350px) {
