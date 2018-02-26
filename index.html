@@ -34,14 +34,16 @@
 </head>
 <body>
 
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.5";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- <div id="fb-root"></div> -->
+   <!-- <script>
+  // (function(d, s, id) {
+    // var js, fjs = d.getElementsByTagName(s)[0];
+    // if (d.getElementById(id)) return;
+    // js = d.createElement(s); js.id = id;
+    // js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.5";
+    // fjs.parentNode.insertBefore(js, fjs);
+  // }(document, 'script', 'facebook-jssdk'));
+  // </script>-->
 
   <div class="container-fluid">
     <div class="row">
@@ -78,8 +80,8 @@
               <p class="intro__header__subtitle">Couchsurfingowa przygoda</p>
             </header>
             <div class="intro__buttons__container clearfix">
-              <a class="intro__button">Historia strony</a>
-              <a class="intro__button">Kulisy przygody</a>
+              <a class="intro__button" href="#origins">Historia strony</a>
+              <a class="intro__button" href="#overview">Kulisy przygody</a>
             </div>
           </div>
         </div>
@@ -239,6 +241,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/effects.js"></script>
 
 </body>
 </html>
