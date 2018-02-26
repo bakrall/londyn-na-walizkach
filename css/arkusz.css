@@ -286,13 +286,14 @@ p {
 /*.origins__text,
 .overview__text,
 .article__content {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-family: "Treblist__hostels__linkuchet MS", Helvetica, sans-serif;
 }*/
 
-.link_overview {
+.link_overview,
+.list__hostels__link {
 	color: #23527c;
 	font-weight: bold;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	text-align: center;
 	padding: 0.4rem;
 }
@@ -522,11 +523,9 @@ a#various {
 	margin-bottom: 3rem;
 }
 
-.dd__link_hostel {
+.list__hostels__link {
 	display: block;
 	width: 100%;
-	text-align: center;
-	margin: 0.5rem 0;
 }
 
 .list__hostels__title {
