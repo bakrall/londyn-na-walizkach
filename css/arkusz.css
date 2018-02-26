@@ -600,48 +600,101 @@ a#various {
 }
 
 .panel-group .panel {
-	box-shadow: 0;
+	box-shadow: none;
+	border-radius: 0;
+	border: 0;
+	border-bottom: 1px solid rgba(179, 120, 114, 0.2); ;
 }
 
-.panel-group .panel-heading {
+.panel-heading {
+	padding: 0;
+}
+
+.panel-group .panel + .panel {
+	margin-top: 0;
+}
+.panel-group .panel-title__link {
 	/*box-shadow: 0 1px 1px rgba(0,0,0,0.8);*/
 /*	background: #48858A;
 	background: url(../img/simon-rae-422576-unsplash.jpg);
 	background: #B47A6F;
 	background: #B26948;*/
-	background: rgba(179, 120, 114, 0.1);
+	padding: 2rem;
+	background-color: rgba(179, 120, 114, 0.1);
 	text-align: center;
 	font-size: 1.1rem;
 	font-weight: bold;
+	border-radius: 0;
+	height: 5.25rem;
+	transition: background-color 0.5s ease-in-out;
 }
 
-.panel-heading:hover,
-.panel-heading:active,
-.panel-heading:focus{
+.panel-title__link:before {
+   content: "+";
+   font-size: 1.25rem;
+   float: left; 
+   transition: transform 0.3s ease-in-out;
+}
+
+.panel-title__link:hover,
+.panel-title__link:active,
+.panel-title__link:focus {
 	/*background:darken(#48858A, 10%);*/
 /*	background: linear-gradient(
       rgba(0, 0, 0, 0.2), 
       rgba(0, 0, 0, 0.2)
     ), url(../img/simon-rae-422576-unsplash.jpg);*/
-	background: rgba(179, 120, 114, 0.3);
-}
-
-.panel a:hover,
-.panel a:active,
-.panel a:link {
+	background-color: rgba(179, 120, 114, 0.3);
 	text-decoration: none;
 	outline: none;
 }
 
-.panel a {
+.panel-heading.panel_expanded .panel-title__link {
+	background-color: rgba(179, 120, 114, 0.3);
+}
+
+.panel-heading.panel_expanded .panel-title__link:before {
+  	transform: rotate(-225deg);
+}
+
+.panel-title__link {
 	display: inline-block;
 	width: 100%;
 	padding: 1rem 0;
 }
 
-.panel-group .panel-heading+.panel-collapse>.panel-body {
+.panel-group .panel-heading + .panel-collapse>.panel-body {
 	border: 0;
+	padding: 2rem 1rem;
 } 
+
+.panel-body {
+    height:auto;
+    overflow:hidden; 
+    /*max-height:50em;*/
+    max-height: auto;
+    transition:max-height 1s;
+}
+
+.panel-collapse.in > .panel-body {
+	max-height: 50em;
+}
+
+.animate_in {
+     animation: accordionIn 0.45s normal ease-in-out both 1; 
+}
+
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    transform:scale(0.9) rotateX(-60deg);
+    transform-origin: 50% 0;
+  }
+  100% {
+    opacity:1;
+    transform:scale(1);
+  }
+}
 
 figure {
 	height: 28rem;
