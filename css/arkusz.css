@@ -520,7 +520,8 @@ a#various {
 		/*background: url(../img/benjamin-davies-484913-unsplash.jpg);*/
 	background: url(../img/luca-micheli-422053-unsplash.jpg);
 	background-size: cover;
-	background-position: bottom 34% left;
+	background-position: bottom -71% left;
+	background-attachment: fixed;
 	height: 16.25rem;
 }
 
