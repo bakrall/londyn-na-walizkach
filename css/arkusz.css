@@ -456,9 +456,11 @@ a#various {
 	}
 }
 
-.image-decoration {	
+.image_decoration {	
 	background: url(../img/benjamin-davies-484913-unsplash.jpg);	
 	background-size: cover;	
+	background-position: bottom;
+	background-attachment: fixed;
 	height: 43.75rem;	
 	margin: 6rem 0;	;	
 }
