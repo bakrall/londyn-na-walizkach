@@ -53,11 +53,15 @@ table {
 html {
  	font-size: 16px;
  	font-family: Verdana, Geneva, sans-serif;
+ 	overflow: hidden;
+ 	height: 100%;
 }
 
 
 body {
  	color: #191919;	
+ 	overflow: auto;
+ 	height: 100%;
 }
 
 .clearfix {
