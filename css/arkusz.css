@@ -490,15 +490,8 @@ a#various {
 	margin: 6rem 0;	;	
 }
 
-.image_decoration_middle-up {
-	background: url(../img/alessia-caudiero-1867-unsplash.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-}
-
 .image_decoration_middle-bottom {
-	background: url(../img/jamie-street-94244-unsplash.jpg);
-		background: url(../img/alessia-caudiero-1867-unsplash.jpg);
+	background: url(../img/alessia-caudiero-1867-unsplash.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
