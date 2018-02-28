@@ -83,9 +83,36 @@ p {
 	padding: 0;
 }
 
-.nav {
+.icon_home > .fa {
+	font-size: 1.2rem;
+}
+
+.link_home {
+	display: none;
+}
+
+@media (max-width: 767px) {
+	.link_home {
+		display: block;
+	}
+
+	.nav > li > a.icon_home {
+		display: none;
+	}
+}
+
+.nav,
+.navbar-brand {
 	text-transform: uppercase;
 	font-size: 0.8rem;
+}
+
+.navbar-brand {
+	font-size: 0.9rem
+}
+
+.nav > li > a {
+	height: 3.125rem;
 }
 
 .nav > li > a:hover,
@@ -97,7 +124,6 @@ p {
 
 @media (max-width: 767px) {
 	.nav > li > a {
-		height: 3.75rem;
 		line-height: 2.5;
 		padding-left: 2rem;
 	}
@@ -190,13 +216,6 @@ p {
 }
 
 .intro__header {
-	/*font-family: "Montserrat", sans-serif;*/
-	/*font-family: Impact, Charcoal, sans-serif;*/
-	/*font-family: "Trebuchet MS", Helvetica, sans-serif;*/
-	/*font-family: "Arial Black", Gadget, sans-serif;*/
-	/*font-family: "Comic Sans MS", cursive, sans-serif;*/
-	/*font-family: Georgia, serif;*/
-	/*font-family: "Treblist__hostels__linkuchet MS", Helvetica, sans-serif;*/
 	font-family: 'Merriweather', serif;
 	font-weight: bold;
 	color: #191919;
@@ -247,10 +266,6 @@ p {
 		bottom: 0;
 	}
 
-/*	.intro__header__container {
-		max-width: 31.25rem;
-	}*/
-
 	.intro__header {
 		font-size: 0.8rem;
 		padding: 3rem 2rem;
@@ -285,10 +300,8 @@ p {
 .articles__heading,
 .contact__heading {
 	font-size: 2rem;
-	/*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
 	font-family: 'Merriweather', serif;
 	font-weight: bold;
-	/*font-family: Georgia, serif;*/
 	padding: 2rem 1rem 3rem;
 	text-align: center;
 }
