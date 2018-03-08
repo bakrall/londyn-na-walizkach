@@ -14,8 +14,8 @@ $(document).ready(function(e) {
 });
 
 function scrollToAnchor(event) {
-	var headerHeight = $('navbar').height(),
-		anchorTarget = $(this).attr('href');
+    var headerHeight = $('navbar').height(),
+        anchorTarget = $(this).attr('href');
     	
     if ($(anchorTarget).offset() !== undefined) {
     	var distanceToScroll = $(anchorTarget).offset().top - headerHeight;
@@ -30,6 +30,7 @@ function scrollToAnchor(event) {
 
 function adjustHeight(elem){
     var maxHeight = 0;
+
     $(elem).css('height','auto');
     $(elem).each(function(){
        if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }

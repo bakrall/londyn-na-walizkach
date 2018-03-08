@@ -403,7 +403,7 @@ a#various {
 	background-size: cover;	
 	background-position: bottom;
 	background-attachment: fixed;
-	height: 33rem;	
+	height: 30rem;	
 	margin: 6rem 0;	;	
 }
 
@@ -670,6 +670,11 @@ footer p {
 	figure {
 		display: none;
 	}
+
+	.intro,
+	.image_decoration {
+		background-attachment: scroll;
+	}
 }
 
 @media (max-width: 730px) {
@@ -687,6 +692,10 @@ footer p {
 @media (max-width: 645px) {
 	.gallery__item {
 		width: 100%;
+	}
+
+	.image_decoration {
+		display: none;
 	}
 }
 
