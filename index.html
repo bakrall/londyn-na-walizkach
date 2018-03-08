@@ -232,12 +232,40 @@
               </li>
             </ul>
           </div>
-          <div id="contact">
+          <div id="contact" class="clearfix">
             <h2 class="contact__heading">Kontakt</h2>
+            <div class="row column-adjusted">
+              <div class="col-xs-12 col-lg-6">
+              <div class="contact-form__wrapper">  
+                <h3 class="contact-form__title">Wyślij nam wiadomość</h3>
+                <form id="contact-form" class="contact-form" action="" method="post">
+                  <div class="contact-form__input-wrapper">
+                    <fieldset class="contact__fieldset">
+                      <label for="name" class="contact-form__label"><sup class="obligatory">*</sup>Imię i nazwisko</label> 
+                      <input id="name" class="contact-form__input" type="text" required autofocus>
+                    </fieldset>
+                    <fieldset class="contact__fieldset">
+                      <label for="email" class="contact-form__label"><sup class="obligatory">*</sup>E-mail</label> 
+                      <input id="email" class="contact-form__input" type="email" required>
+                    </fieldset>
+                    <fieldset class="contact__fieldset">
+                      <label for="message" class="contact-form__label"><sup class="obligatory">*</sup>Wiadomość</label> 
+                      <textarea id="message" class="contact-form__input" required></textarea>
+                    </fieldset>
+                    <fieldset class="contact__fieldset">
+                      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Wyślij</button>
+                    </fieldset>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-xs-12 col-lg-6">
               <address class="contact__details">
                 <p>Barbara Stadnik</p>
                 <p>podroze@sizne.pl</p>
               </address>
+            </div>
+            </div>
           </div>
         </main>
         <footer>

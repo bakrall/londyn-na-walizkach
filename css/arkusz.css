@@ -80,6 +80,7 @@ p {
 
 .column-adjusted {
 	padding: 0;
+	margin: 0;
 }
 
 .icon_home > .fa {
@@ -210,7 +211,6 @@ p {
 #origins,
 #overview,
 #articles,
-#contact,
 .article__content,
 .panel-group {
 	width: 62.5rem;
@@ -221,6 +221,10 @@ p {
 #overview,
 #gallery {
 	margin-top: 3rem;
+}
+
+#contact {
+	margin: 4rem auto;
 }
 
 .origins__heading,
@@ -237,6 +241,10 @@ p {
 
 .gallery__heading {
 	padding-bottom: 3.75rem;
+}
+
+.contact__heading {
+	padding-bottom: 4.5rem;
 }
 
 .link_overview,
@@ -426,6 +434,88 @@ a#various {
 	text-indent: 0;
 }
 
+.contact-form__wrapper {
+	box-shadow: 0 0 2px 0 #A1A1A1;
+	padding-top: 4.5rem;
+	margin-top: 1rem;
+	max-width: 35rem;	
+	margin: 0 auto;
+}
+
+.contact-form {
+	max-width: 31.25rem;
+	background: #fff;
+	padding: 0 6rem 4rem;
+	margin: 0 auto;	
+}
+
+@media (max-width: 575px) {
+	.contact-form {
+		padding: 0 1rem 4rem;
+	} 
+}
+
+.contact-form__title {
+	font-size: 1.5rem;
+	margin-bottom: 3rem;
+	text-align: center;
+}
+
+.contact-form__input-wrapper {
+	position: relative;
+	margin-bottom: 1.5rem;
+}
+
+.contact__fieldset {
+	margin-top: 2.3rem;
+	position: relative;
+}
+
+.contact-form__label {
+	color: #404040;
+	font-size: 0.85rem;
+	position: absolute;
+	top: -1rem;
+	z-index: 1;
+}
+
+.contact-form__label .obligatory {
+	padding-left: 5px;
+	color: #EE7171;
+	position: relative;
+	top: -0.2rem;
+}
+
+.contact-form__input {
+	margin-bottom: 1rem;
+	border: 0;
+	border-bottom: 1px solid #CBCBCB;
+	width: 100%;
+	position: relative;
+	min-height: 40px;
+}
+
+textarea {
+	height: 100px;
+}
+
+.contact-form__input_submit {
+	margin-top: 2rem;
+	background: #2196F3;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 0.5rem 1.5rem;
+	border: 0;
+	border-radius: 2px;
+	float: right;
+}
+
+#contact-submit {
+	background: transparent;
+	padding: 1rem;
+	box-shadow: 0 0 2px 0 #A1A1A1;
+}
+
 .article_individual__heading {
 	font-size: 4rem;
 	text-align: center;
@@ -598,6 +688,16 @@ footer p {
 		overflow: hidden;
 		padding-top: 0;
 		width: 100%;
+	}
+}
+
+@media (max-width: 1199px) {
+	.contact__details {
+		margin: 4rem auto 0;
+	}
+
+	.contact-form {
+		max-width: 60.25rem;
 	}
 }
 
