@@ -437,9 +437,14 @@ a#various {
 	text-indent: 0;
 }
 
+#contact-form__messages {
+	text-align: center;
+	margin-bottom: 4rem;
+}
+
 .contact-form__wrapper {
 	box-shadow: 0 0 2px 0 #A1A1A1;
-	padding-top: 4.5rem;
+	padding-top: 4rem;
 	margin-top: 1rem;
 	max-width: 35rem;	
 }
@@ -459,8 +464,9 @@ a#various {
 
 .contact-form__title {
 	font-size: 1.5rem;
-	margin-bottom: 3rem;
+	margin-bottom: 5rem;
 	text-align: center;
+	font-family: 'Merriweather', serif;
 }
 
 .contact-form__input-wrapper {
@@ -474,8 +480,8 @@ a#various {
 }
 
 .contact-form__label {
-	color: #404040;
-	font-size: 0.85rem;
+	/*color: #404040;*/
+	font-size: 1rem;
 	position: absolute;
 	top: -1rem;
 	z-index: 1;
@@ -490,11 +496,18 @@ a#various {
 
 .contact-form__input {
 	margin-bottom: 1rem;
+	margin-top: 0.5rem;
 	border: 0;
 	border-bottom: 1px solid #CBCBCB;
 	width: 100%;
 	position: relative;
 	min-height: 40px;
+}
+
+.contact-form__input:focus {
+	border: 1px solid rgba(25,25,25,0.6);
+	border-radius: 2px;
+	outline: 0;
 }
 
 textarea {
@@ -513,9 +526,14 @@ textarea {
 }
 
 #contact-submit {
-	background: transparent;
+	background: #262626;
+	color: #fff;
 	padding: 1rem;
-	box-shadow: 0 0 2px 0 #A1A1A1;
+	/*box-shadow: -1px 1px 0 1px rgba(0,0,0,0.75), 1px -1px 0 1px rgba(0,0,0,0.75);*/
+	text-align: center;
+	width: 100%;
+	border: none;
+	text-transform: uppercase;
 }
 
 .article_individual__heading {
