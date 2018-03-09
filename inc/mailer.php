@@ -44,7 +44,7 @@
   } else {
       // Not a POST request, set a 403 (forbidden) response code.
       http_response_code(403);
-      echo "Wystąpił problem z przesłaniem Wiadomości. Spróbuj jeszcze raz.";
+      echo "Wystąpił problem z przesłaniem wiadomości. Spróbuj jeszcze raz.";
   }
 
 ?>

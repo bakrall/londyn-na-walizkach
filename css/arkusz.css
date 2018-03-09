@@ -439,7 +439,9 @@ a#various {
 
 #contact-form__messages {
 	text-align: center;
-	margin-bottom: 4rem;
+	position: absolute;
+	top: 6.5rem;
+	width: 100%;
 }
 
 .contact-form__wrapper {
@@ -447,6 +449,7 @@ a#various {
 	padding-top: 4rem;
 	margin-top: 1rem;
 	max-width: 35rem;	
+	position: relative;
 }
 
 .contact-form {
@@ -468,6 +471,7 @@ a#various {
 	text-align: center;
 	font-family: 'Merriweather', serif;
 }
+
 
 .contact-form__input-wrapper {
 	position: relative;
