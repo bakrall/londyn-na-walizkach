@@ -427,6 +427,9 @@ a#various {
 	text-align: center;
 	font-size: 1.5rem;
 	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translate(-50%);
 }
 
 .contact__details p {
@@ -439,13 +442,12 @@ a#various {
 	padding-top: 4.5rem;
 	margin-top: 1rem;
 	max-width: 35rem;	
-	margin: 0 auto;
 }
 
 .contact-form {
 	max-width: 31.25rem;
 	background: #fff;
-	padding: 0 6rem 4rem;
+	padding: 0 2rem 4rem;
 	margin: 0 auto;	
 }
 
@@ -691,9 +693,20 @@ footer p {
 	}
 }
 
+@media (min-width: 1200px) {
+	.contact-form__wrapper {
+		width: 100%;
+		float: right;
+	}
+}
+
 @media (max-width: 1199px) {
 	.contact__details {
 		margin: 4rem auto 0;
+	}
+
+	.contact-form__wrapper {
+		margin: 0 auto;
 	}
 
 	.contact-form {
