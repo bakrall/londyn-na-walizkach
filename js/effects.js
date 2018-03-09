@@ -18,12 +18,6 @@ $(document).ready(function(e) {
         adjustHeight('.column_height-adjusted');
     }
 
-    // if ($(window).width() < 1200 || $(window).resize()) {
-    //     $('.column_height-adjusted').css('height', 'auto');
-    // } else if ($(window).width() >= 1200 || $(window).resize()) {
-    //     adjustHeight('.column_height-adjusted');
-    // }
-
     $('.panel-heading').on('click', accordionEffects);
     $('.navbar a').on('click', scrollToAnchor);
     $('.intro__button').on('click', scrollToAnchor);
