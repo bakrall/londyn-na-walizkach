@@ -1,9 +1,7 @@
 $(function() {
     // Get the form.
-    var form = $('#contact-form');
-
-    // Get the messages div.
-    var formMessages = $('#contact-form__messages');
+    var form = $('#contact-form'),
+        formMessages = $('#contact-form__messages');
 
     // Set up an event listener for the contact form.
 	$(form).submit(function(event) {

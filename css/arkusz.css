@@ -508,6 +508,10 @@ a#various {
 	min-height: 40px;
 }
 
+.contact-form__input:-webkit-autofill {
+	background: #fff;
+}
+
 .contact-form__input:focus {
 	border: 1px solid rgba(25,25,25,0.6);
 	border-radius: 2px;

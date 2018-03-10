@@ -24,7 +24,7 @@ $(document).ready(function(e) {
 });
 
 function scrollToAnchor(event) {
-    var headerHeight = $('navbar').height(),
+    var headerHeight = $('.navbar').height(),
         anchorTarget = $(this).attr('href');
     	
     if ($(anchorTarget).offset() !== undefined) {
