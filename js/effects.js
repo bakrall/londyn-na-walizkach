@@ -10,18 +10,28 @@ $(window).resize(function () {
 });
 
 $(document).ready(function(e) {
+    var operatingSystem = navigator.userAgent.toLowerCase(),
+        isAndroid = operatingSystem.indexOf('android') > -1;
+
     adjustHeight('.articles__item');
     makeStickyFooter();
 
-    var windowWidth = $(window).width();
-    if (windowWidth >= 1200){
+    if ($(window).width() >= 1200){
         adjustHeight('.column_height-adjusted');
     }
 
     $('.panel-heading').on('click', accordionEffects);
     $('.navbar a').on('click', scrollToAnchor);
     $('.intro__button').on('click', scrollToAnchor);
+
+    if(isAndroid) {
+        fixScrollingOnAndroid();
+    }
 });
+
+function fixScrollingOnAndroid() {
+    $('body').addClass('fix-Android');
+}
 
 function scrollToAnchor(event) {
     var headerHeight = $('.navbar').height(),

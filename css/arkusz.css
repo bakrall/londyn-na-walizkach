@@ -63,6 +63,10 @@ body {
  	height: 100%;
 }
 
+.fix-Android {
+	overflow: hidden;
+}
+
 .clearfix {
 	content: '';
 	display: block;
