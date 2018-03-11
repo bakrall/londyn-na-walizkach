@@ -30,7 +30,7 @@ $(document).ready(function(e) {
 });
 
 function fixScrollingOnAndroid() {
-    $('body').addClass('fix-Android');
+    $('html').addClass('fix-Android');
 }
 
 function scrollToAnchor(event) {

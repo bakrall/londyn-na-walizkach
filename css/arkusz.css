@@ -64,7 +64,7 @@ body {
 }
 
 .fix-Android {
-	overflow: hidden;
+	overflow: initial;
 }
 
 .clearfix {
