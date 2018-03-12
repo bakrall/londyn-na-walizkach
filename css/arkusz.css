@@ -212,6 +212,10 @@ p {
 	text-indent: 0;
 }
 
+.intro__arrow {
+	display: none;
+}
+
 #origins,
 #overview,
 #articles,
@@ -805,6 +809,23 @@ footer p {
 	.navbar-right {
 		margin-right: 0;
 		padding-right: 0;
+	}
+
+	.intro {
+		position: relative;
+	}
+
+	.intro__button {
+		display: none;
+	}
+
+	.intro__arrow {
+		display: inline-block;
+		position: absolute;
+		bottom: 2rem;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 4rem;
 	}
 
 	.article_individual__heading {
