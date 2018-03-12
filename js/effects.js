@@ -38,7 +38,7 @@ function scrollToAnchor(event) {
         anchorTarget = $(this).attr('href');
     	
     if ($(anchorTarget).offset() !== undefined) {
-    	var distanceToScroll = $(anchorTarget).offset().top - headerHeight;
+    	var distanceToScroll = $(anchorTarget).offset().top;
 
 		event.preventDefault();
 
