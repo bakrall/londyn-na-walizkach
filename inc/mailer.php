@@ -11,12 +11,10 @@
       if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
           // Set a 400 (bad request) response code and exit.
           http_response_code(400);
-          echo "Oops! There was a problem with your submission. Please complete the form and try again.";
+          echo "Wystąpił problem z przesłaniem wiadomości. Spróbuj jeszcze raz.";
           exit;
       }
 
-      // Set the recipient email address.
-      // FIXME: Update this to your desired email address.
       $recipient = "podroze@sizne.pl";
 
       // Set the email subject.
@@ -46,5 +44,4 @@
       http_response_code(403);
       echo "Wystąpił problem z przesłaniem wiadomości. Spróbuj jeszcze raz.";
   }
-
 ?>

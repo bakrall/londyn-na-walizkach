@@ -13,7 +13,6 @@ $(function() {
     	    data: formData
     	}).done(function(response) {
             $(formMessages).text(response);
-
             $('#name').val('');
             $('#email').val('');
             $('#message').val('');
