@@ -30,7 +30,7 @@ $(document).ready(function(e) {
 });
 
 function fixScrollingOnAndroid() {
-    $('html').addClass('fix-Android');
+    $('html, body').addClass('fix-Android');
 }
 
 function scrollToAnchor(event) {
@@ -42,7 +42,7 @@ function scrollToAnchor(event) {
 
 		event.preventDefault();
 
-	    $('body').animate({
+	    $('html, body').animate({
 	        scrollTop: distanceToScroll
 	    }, 900);
     }
