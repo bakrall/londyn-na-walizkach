@@ -10,8 +10,6 @@ $(window).resize(function () {
 });
 
 $(document).ready(function(e) {
-    var operatingSystem = navigator.userAgent.toLowerCase(),
-        isAndroid = operatingSystem.indexOf('android') > -1;
 
     adjustHeight('.articles__item');
     makeStickyFooter();
