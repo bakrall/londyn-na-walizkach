@@ -42,7 +42,7 @@ function scrollToAnchor(event) {
 
 		event.preventDefault();
 
-	    $('html, body').animate({
+	    $('body').animate({
 	        scrollTop: distanceToScroll
 	    }, 900);
     }
