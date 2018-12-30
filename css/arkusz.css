@@ -54,13 +54,11 @@ table {
 html {
  	font-size: 16px;
  	font-family: Verdana, Geneva, sans-serif;
- 	overflow: auto;
  	height: 100%;
 }
 
 body {
  	color: #191919;	
- 	overflow: initial;
  	height: 100%;
 }
 
