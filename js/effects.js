@@ -23,15 +23,7 @@ $(document).ready(function(e) {
     $('.panel-heading').on('click', accordionEffects);
     $('.navbar a').on('click', scrollToAnchor);
     $('.intro__button').on('click', scrollToAnchor);
-
-    if(isAndroid) {
-        fixScrollingOnAndroid();
-    }
 });
-
-function fixScrollingOnAndroid() {
-    $('html, body').addClass('fix-Android');
-}
 
 function scrollToAnchor(event) {
     var headerHeight = $('.navbar').height(),
